@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html color-mode="light" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Aditeya Baral</title>
+    <script>
+      if (
+        localStorage.getItem("color-mode") === "dark" ||
+        (window.matchMedia("(prefers-color-scheme: dark)").matches &&
+          !localStorage.getItem("color-mode"))
+      ) {
+        document.documentElement.setAttribute("color-mode", "dark");
+      }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <link rel="icon" href="assets/png/avatar.png">
+  </head>
+  <body>
+    <div id="container">
+
+      <!-- Dark Mode Toggle  -->
+      <div class="color-mode-toggle">
+        <button class="color-mode-btn light--hidden" aria-label="Toggle light mode">
+          <svg class="icon-sun">
+            <use xlink:href="assets/svg/svg-defs.svg#sun"></use>
+          </svg>
+        </button>
+        <button class="color-mode-btn dark--hidden" aria-label="Toggle dark mode">
+          <svg class="icon-moon">
+            <use xlink:href="assets/svg/svg-defs.svg#moon"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- 
+        Name Block
+        -->
+      <div id="name-block">Aditeya Baral</div>
+
+      <!-- 
+        Navigation Block
+        -->
+      <div id="nav-block">
+
+        <!-- Additional nav links go here -->
+        <span id="projects" class="nav-selected"> Projects</span>
+        <span id="Email">
+            <a href="mailto:aditeya.baral@gmail.com">
+              Email
+            </a>
+          </span>
+        <span id="Resume">
+            <a href="https://bit.ly/aditeya-resume-may21">
+              Resume
+            </a>
+          </span>
+        <span id="Contact Me">
+            <a href="https://bio.link/aditeyabaral">
+              Contact Me
+            </a>
+          </span>
+      </div>
+
+      <!-- 
+        Profile Block
+        -->
+      <div id="pf-img-container">
+        <img id="pf-img-source" src="assets/png/avatar.png" alt="Profile Avatar">
+        <img id="pf-img-shadow" src="assets/png/avatar.png" alt="">
+      </div>
+      <div id="pf-info-container">
+        <div id="pf-info-bio">
+          <div>Software Developer & AI Enthusiast</div>
+        </div>
+        <div id="pf-info-links">
+          <div id="pf-info-github">
+            <svg class="pf-info-icon icon-f">
+              <use xlink:href="assets/svg/svg-defs.svg#github"></use>
+            </svg>
+            <a target="_blank" href="https://github.com/aditeyabaral">
+              <span>aditeyabaral</span>
+            </a>
+          </div>
+          <div id="pf-info-location">
+            <svg class="pf-info-icon icon-f">
+              <use xlink:href="assets/svg/svg-defs.svg#map-pin"></use>
+            </svg>
+            <span>PES University, Bangalore</span>
+          </div>
+          <div id="pf-info-company">
+            <svg class="pf-info-icon icon-f">
+              <use xlink:href="assets/svg/svg-defs.svg#users"></use>
+            </svg>
+            <span>@HackerSpace-PESU @Intel @Cloud-Computing-Big-Data</span>
+          </div>
+          <div id="pf-info-linkedin">
+            <svg class="pf-info-icon icon-f">
+              <use xlink:href="assets/svg/svg-defs.svg#linkedin"></use>
+            </svg>
+            <a target="_blank" href="https://www.linkedin.com/in/aditeyabaral/">
+              <span>Aditeya Baral</span>
+            </a>
+          </div>
+          <div id="pf-info-twitter">
+            <svg class="pf-info-icon icon-f">
+              <use xlink:href="assets/svg/svg-defs.svg#twitter"></use>
+            </svg>
+            <a target="_blank" href="https://twitter.com/aditeyabaral01">
+              <span>aditeyabaral01</span>
+            </a>
+          </div>
+          <div>
+            <svg class="pf-info-icon icon-f">
+              <use xlink:href="assets/svg/svg-defs.svg#link"></use>
+            </svg>
+            <a href="https://bio.link/aditeyabaral">
+              <span>bio.link/aditeyabaral</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Repository Block -->
+      <div id="repo-block">
+        <div id="readme"></div>
+        <div id="repo-grid" class="grid">
+
+          <!-- repository cards go here -->
+          <div class="grid-item">
+            <div class="repo-lang"><span>C</span></div>
+            <div class="repo-about">
+              <a href="https://github.com/aditeyabaral/nlpc">
+                <span class="repo-title">
+                  nlpc
+                </span>
+                <span class="repo-desc">
+                Natural Language Toolkit built using the C Programming Language</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>7</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>4</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang"><span>Python</span></div>
+            <div class="repo-about">
+              <a href="https://github.com/aditeyabaral/pesu-academy-bot">
+                <span class="repo-title">
+                  pesu-academy-bot
+                </span>
+                <span class="repo-desc">
+                PESU Academy Discord Bot built for PESsants and PESts of PES University</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>14</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>3</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang"><span>Python</span></div>
+            <div class="repo-about">
+              <a href="https://github.com/aditeyabaral/togepi">
+                <span class="repo-title">
+                  togepi
+                </span>
+                <span class="repo-desc">
+                <img class="repo-socialprev-img" src="https://repository-images.githubusercontent.com/350223829/51561c00-9bd1-11eb-9efa-d71aaba73ed9" alt="togepi social preview image">
+                A version control system built using Python and DropBox API</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>17</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>1</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang"><span>Jupyter Notebook</span></div>
+            <div class="repo-about">
+              <a href="https://github.com/aditeyabaral/kepler-exoplanet-analysis">
+                <span class="repo-title">
+                  kepler-exoplanet-analysis
+                </span>
+                <span class="repo-desc">
+                Analysis of Kepler Objects of Interest using Machine Learning for Exoplanet Identification.</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>2</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang"><span>Jupyter Notebook</span></div>
+            <div class="repo-about">
+              <a href="https://github.com/aditeyabaral/lok-sabha-election-twitter-analysis">
+                <span class="repo-title">
+                  lok-sabha-election-twitter-analysis
+                </span>
+                <span class="repo-desc">
+                Twitter Feeds were analysed during the Lok Sabha Elections 2019 to guage the overall popularities of each party and predict the winner based solely on the tweets made by the population. This was made as a part of our Data Science course (UE18CS203) at PES University.</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>5</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>1</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang"><span>Python</span></div>
+            <div class="repo-about">
+              <a href="https://github.com/aditeyabaral/natural-language-database-querying">
+                <span class="repo-title">
+                  natural-language-database-querying
+                </span>
+                <span class="repo-desc">
+                A novel approach to data retrieval from tagged databases using only natural language audio queries</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>5</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>1</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang"><span>Python</span></div>
+            <div class="repo-about">
+              <a href="https://github.com/aditeyabaral/Computer-Networks-Lab-UE18CS304">
+                <span class="repo-title">
+                  Computer-Networks-Lab-UE18CS304
+                </span>
+                <span class="repo-desc">
+                A repository containing the source code and observations for the Computer Networks Laboratory course at PES University</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>17</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>7</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang"><span>Scilab</span></div>
+            <div class="repo-about">
+              <a href="https://github.com/aditeyabaral/Linear-Algebra-Scilab-Assignment-UE18MA251">
+                <span class="repo-title">
+                  Linear-Algebra-Scilab-Assignment-UE18MA251
+                </span>
+                <span class="repo-desc">
+                A repository containing the source codes for the Linear Algebra Assignment using SciLab given as a part of the Linear Algebra course (UE18MA251) at PES University.</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>14</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>2</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang"><span>Python</span></div>
+            <div class="repo-about">
+              <a href="https://github.com/aditeyabaral/arithmetic-as-a-service">
+                <span class="repo-title">
+                  arithmetic-as-a-service
+                </span>
+                <span class="repo-desc">
+                Implementing arithmetic operations as a service because why not.</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>12</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>4</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang"><span>C++</span></div>
+            <div class="repo-about">
+              <a href="https://github.com/aditeyabaral/MPCA-Lab-UE18CS256">
+                <span class="repo-title">
+                  MPCA-Lab-UE18CS256
+                </span>
+                <span class="repo-desc">
+                A repository containing the source codes for the Microprocessors and Computer Architecture Laboratory course (UE18CS256) at PES University.</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>11</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>1</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang"><span>Verilog</span></div>
+            <div class="repo-about">
+              <a href="https://github.com/aditeyabaral/DDCO-Lab-UE18CS207">
+                <span class="repo-title">
+                  DDCO-Lab-UE18CS207
+                </span>
+                <span class="repo-desc">
+                A repository containing the source codes for the Digital Design and Computer Organization Laboratory course (UE18CS2) at PES University.</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>8</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>7</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang"><span>Python</span></div>
+            <div class="repo-about">
+              <a href="https://github.com/aditeyabaral/spongebob-as-a-service">
+                <span class="repo-title">
+                  spongebob-as-a-service
+                </span>
+                <span class="repo-desc">
+                Converting the SpongeBob Mocking Meme into a Service to redefine the meaning of SaaS</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>7</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>1</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang"><span>Python</span></div>
+            <div class="repo-about">
+              <a href="https://github.com/aditeyabaral/pydictionary">
+                <span class="repo-title">
+                  pydictionary
+                </span>
+                <span class="repo-desc">
+                PyDictionary is an offline English dictionary made using Python along with the Wordnet Lexical Database and Enchant Spell Dictionary. The application returns any query with a list of results - the various word forms and their meanings along with a sample sentence using the given word.</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>6</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>9</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang"><span>C</span></div>
+            <div class="repo-about">
+              <a href="https://github.com/aditeyabaral/OS-Lab-UE18CS305">
+                <span class="repo-title">
+                  OS-Lab-UE18CS305
+                </span>
+                <span class="repo-desc">
+                A repo containing the source codes for the Operating Systems Laboratory course at PES University.</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>4</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang"><span>C</span></div>
+            <div class="repo-about">
+              <a href="https://github.com/aditeyabaral/Data-Structures-UE18CS202">
+                <span class="repo-title">
+                  Data-Structures-UE18CS202
+                </span>
+                <span class="repo-desc">
+                A repository containing the source codes for the Data Structures course (UE18CS202) at PES University. </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>4</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>1</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang"><span>Python</span></div>
+            <div class="repo-about">
+              <a href="https://github.com/aditeyabaral/pesu-auth">
+                <span class="repo-title">
+                  pesu-auth
+                </span>
+                <span class="repo-desc">
+                A simple API to authenticate PESU credentials using PESU Academy</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>3</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang"><span>Python</span></div>
+            <div class="repo-about">
+              <a href="https://github.com/aditeyabaral/redirector">
+                <span class="repo-title">
+                  redirector
+                </span>
+                <span class="repo-desc">
+                A simple link redirecting service built using Flask</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>2</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang"><span>Python</span></div>
+            <div class="repo-about">
+              <a href="https://github.com/aditeyabaral/Machine-Intelligence-Assignments-UE18CS303">
+                <span class="repo-title">
+                  Machine-Intelligence-Assignments-UE18CS303
+                </span>
+                <span class="repo-desc">
+                A repository containing the source codes for the assignments done as a part of the Machine Intelligence (UE18CS303) course at PES University. </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>2</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>1</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang"><span>Jupyter Notebook</span></div>
+            <div class="repo-about">
+              <a href="https://github.com/aditeyabaral/abstractive-summarization">
+                <span class="repo-title">
+                  abstractive-summarization
+                </span>
+                <span class="repo-desc">
+                Abstractive Text Summarization using a Seq2Seq model for medium sized corpora.</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>2</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang"><span>C</span></div>
+            <div class="repo-about">
+              <a href="https://github.com/aditeyabaral/Data-Structures-Lab-UE18CS207">
+                <span class="repo-title">
+                  Data-Structures-Lab-UE18CS207
+                </span>
+                <span class="repo-desc">
+                A repository containing the source codes to the problem statements given as part of the Data Structures Laboratory course (UE18CS207) at PES University.</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>2</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang"><span>C</span></div>
+            <div class="repo-about">
+              <a href="https://github.com/aditeyabaral/DAA-Lab-UE18CS255">
+                <span class="repo-title">
+                  DAA-Lab-UE18CS255
+                </span>
+                <span class="repo-desc">
+                A repository containing the source codes for the Design and Analysis of Algorithms Laboratory course (UE18CS255) at PES University.</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>2</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>2</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-about">
+              <a href="https://github.com/aditeyabaral/OOADSE-Lab-UE18CS355">
+                <span class="repo-title">
+                  OOADSE-Lab-UE18CS355
+                </span>
+                <span class="repo-desc">
+                A repository containing the submissions part of the Object Oriented Analysis and Design &amp; Software Engineering course (UE18CS355) at PES University.</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>1</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang"><span>TSQL</span></div>
+            <div class="repo-about">
+              <a href="https://github.com/aditeyabaral/DBMS-Assignments-UE18CS252">
+                <span class="repo-title">
+                  DBMS-Assignments-UE18CS252
+                </span>
+                <span class="repo-desc">
+                A repository containing the assignments done as a part of the Database Management Systems course (UE18CS252) at PES University. </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>1</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>1</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang"><span>Jupyter Notebook</span></div>
+            <div class="repo-about">
+              <a href="https://github.com/aditeyabaral/gpt2-implementation">
+                <span class="repo-title">
+                  gpt2-implementation
+                </span>
+                <span class="repo-desc">
+                Notebooks containing implementations of GPT-2 for text generation</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>1</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang"><span>Python</span></div>
+            <div class="repo-about">
+              <a href="https://github.com/aditeyabaral/cmdshow">
+                <span class="repo-title">
+                  <svg class="icon-fork"><use xlink:href="assets/svg/svg-defs.svg#fork"></use></svg>
+                  cmdshow
+                </span>
+                <span class="repo-desc">
+                A CLI tool for creating slideshows from images quickly</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>1</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="index.js"></script>
+
+    <!-- Built using Portfolio (https://github.com/shaansubbaiah/Portfolio) -->
+  </body>
+</html>
