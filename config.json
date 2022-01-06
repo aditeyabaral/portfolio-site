@@ -1,0 +1,25 @@
+{
+	"username": "aditeyabaral",
+	"repos": "30",
+	"avatar": null,
+	"linkedinURL": "https://www.linkedin.com/in/aditeyabaral/",
+	"twitterId": "aditeyabaral01",
+	"gitlabId": null,
+	"navLinks": [
+		{
+			"name": "Email",
+			"link": "mailto:aditeya.baral@gmail.com"
+		},
+		{
+			"name": "Resume",
+			"link": "https://goto-link.herokuapp.com/aditeya-resume"
+		},
+		{
+			"name": "Contact Me",
+			"link": "https://bio.link/aditeyabaral"
+		}
+	],
+	"infoLinks": [],
+	"socialPreviewImage": "enabled",
+	"profileREADME": "disabled"
+}
